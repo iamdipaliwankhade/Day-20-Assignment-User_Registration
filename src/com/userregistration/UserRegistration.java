@@ -47,4 +47,11 @@ public class UserRegistration {
 		Matcher matcher = pattern.matcher(password);
 		return matcher.matches();
 	}
+
+	public boolean password3(String password) {
+		String regex = "((?=.[a-z]).{8,9})";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(password);
+		return matcher.matches();
+	}
 }
