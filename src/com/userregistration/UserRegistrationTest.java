@@ -14,8 +14,21 @@ public class UserRegistrationTest {
 	}
 
 	@Test
-	public void givenFirstName_WhenNotProper_ShouldReturnFalse() {
+	public void givenFirstName_whenNotProper_ShouldReturnFalse() {
 		boolean result = userRegistration.firstName("dipali");
 		Assert.assertEquals(false, result);
 	}
+
+	@Test
+	public void givenLastName_whenProper_ShouldReturnTrue() {
+		boolean result = userRegistration.lastName("Wankhade");
+		Assert.assertEquals(true, result);
+	}
+
+	@Test
+	public void givenLastName_WhenNotProper_ShouldReturnFalse() {
+		boolean result = userRegistration.lastName("wankhade");
+		Assert.assertEquals(false, result);
+	}
+
 }
