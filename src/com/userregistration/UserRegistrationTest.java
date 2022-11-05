@@ -16,28 +16,28 @@ public class UserRegistrationTest {
 	@Test
 	public void givenFirstName_whenProper_ShouldReturnTrue() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.firstNameValidate("Shadab");
+		boolean result = userRegistrationRegEx.firstNameValidate("Dipali");
 		Assert.assertTrue(result);
 	}
 
 	@Test
 	public void givenFirstName_whenNotProper_ShouldReturnFalse() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.firstNameValidate("Shadab");
+		boolean result = userRegistrationRegEx.firstNameValidate("dipali");
 		Assert.assertFalse(result);
 	}
 
 	@Test
 	public void givenLastName_whenProper_ShouldReturnTrue() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.lastNameValidate("Hussain");
+		boolean result = userRegistrationRegEx.lastNameValidate("Wankhade");
 		Assert.assertTrue(result);
 	}
 
 	@Test
 	public void givenLastName_whenNotProper_ShouldReturnFalse() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.lastNameValidate("hussain");
+		boolean result = userRegistrationRegEx.lastNameValidate("wankhade");
 		Assert.assertFalse(result);
 	}
 
@@ -58,14 +58,14 @@ public class UserRegistrationTest {
 	@Test
 	public void givenPhone_whenProper_ShouldReturnTrue() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.phoneNumberValidate("91 7879219494");
+		boolean result = userRegistrationRegEx.phoneNumberValidate("91 9307370471");
 		Assert.assertTrue(result);
 	}
 
 	@Test
 	public void givenPhone_whenNotProper_ShouldReturnFalse() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.phoneNumberValidate("7879219494");
+		boolean result = userRegistrationRegEx.phoneNumberValidate("7896532698");
 		Assert.assertFalse(result);
 	}
 
@@ -79,7 +79,7 @@ public class UserRegistrationTest {
 	@Test
 	public void givenPassword_whenNotProper_ShouldReturnFalse() {
 		UserRegistration userRegistrationRegEx = new UserRegistration();
-		boolean result = userRegistrationRegEx.passwordValidate("Shadab23#%");
+		boolean result = userRegistrationRegEx.passwordValidate("Dipali23#%");
 		Assert.assertFalse(result);
 	}
 }
