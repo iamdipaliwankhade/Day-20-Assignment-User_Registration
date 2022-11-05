@@ -19,7 +19,7 @@ public class InvalidUserInputException extends Exception {
 	public void givenFirstName_whenNotProper_ShouldReturnFalse() {
 		try {
 			UserRegistration userRegistrationRegEx = new UserRegistration();
-			boolean result = userRegistrationRegEx.firstNameValidate("shadab");
+			boolean result = userRegistrationRegEx.firstNameValidate("dipali");
 			Assert.assertFalse(result);
 		} catch (Exception e) {
 		}
